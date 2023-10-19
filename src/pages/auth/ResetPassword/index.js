@@ -74,9 +74,10 @@ const ResetPassword = () => {
       />
       <div className={styles.footerContainer}>
         <div className={styles.textContainer}>
+          Back to{' '}
           <Button
             label="Log in"
-            className={`btn-black-fill ${styles.linkButton}`}
+            className={styles.linkButton}
             onClick={() => history.push(path.login)}
           />
         </div>

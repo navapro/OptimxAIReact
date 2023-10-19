@@ -121,18 +121,21 @@ const Signup = () => {
       />
       <div className={styles.footerContainer}>
         <div className={styles.textContainer}>
+          You have account?{' '}
           <Button
             label="Log in"
-            className={`btn-black-fill ${styles.linkButton}`}
+            className={styles.linkButton}
             onClick={() => history.push(path.login)}
           />
         </div>
         <div className={styles.textContainer}>
+          Forget{' '}
           <Button
             label="Password"
-            className={`btn-black-fill ${styles.linkButton}`}
+            className={styles.linkButton}
             onClick={() => history.push(path.resetPassword)}
           />
+          ?
         </div>
       </div>
       <ConfirmEmail
